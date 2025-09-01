@@ -25,7 +25,7 @@ function SidebarComponent({userName, type}: SidebarComponentProps){
           position="bottom-end"
           withBorder
           >
-          <Avatar radius="xl" color="cyan" src="/public/profile.jpg" />
+          <Avatar radius="xl" color="cyan" src="public/Martin.jpg" />
         </Indicator>
         <Text>User : {userName} : {type === "admin" ? "Admin" : "Student"}</Text>
       </Group>
@@ -65,12 +65,7 @@ export default function Sidebar() {
       </Box>
       {/* แสดงผู้ใช้งาน */}
       <Box p={10}>
-        <Group>
-          <Indicator inline size={10} offset={5} position="bottom-end" color="green" withBorder>
-            <Avatar src="public/Martin.jpg"></Avatar>
-          </Indicator>
-         <Text>User: Thanaphon </Text>
-        </Group>
+        <SidebarComponent userName="Thanaphon Chunlahawanit"  />
       </Box>
     </Stack>
   );
