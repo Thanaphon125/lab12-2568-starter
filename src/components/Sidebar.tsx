@@ -25,7 +25,7 @@ function SidebarComponent({userName, type}: SidebarComponentProps){
           position="bottom-end"
           withBorder
           >
-          <Avatar radius="xl" color="cyan" src="public/Martin.jpg" />
+          <Avatar radius="xl" color="cyan" src="Martin.jpg" />
         </Indicator>
         <Text>User : {userName} : {type === "admin" ? "Admin" : "Student"}</Text>
       </Group>
